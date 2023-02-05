@@ -1,6 +1,11 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:portfolio_website/screens/projects.dart';
+import 'package:portfolio_website/screens/services.dart';
 import 'package:portfolio_website/widgets/title.dart';
 
+import 'contacts.dart';
 import 'home.dart';
 
 // ignore: must_be_immutable
@@ -41,22 +46,29 @@ class MainPage extends StatelessWidget {
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Stack(
-          children: [
-            Align(
-              alignment: Alignment.center,
-              child: Image.asset(
-                'assets/images/bg.jpg',
-                width: width,
-                height: height,
-                fit: BoxFit.cover,
-                alignment: Alignment.topCenter,
-              ),
+      body: Stack(
+        children: [
+          Align(
+            alignment: Alignment.center,
+            child: Image.asset(
+              'assets/images/bg.jpg',
+              width: width,
+              height: height,
+              fit: BoxFit.cover,
+              alignment: Alignment.topCenter,
             ),
-            Home(),
-          ],
-        ),
+          ),
+          ListView(
+            shrinkWrap: true,
+            scrollDirection: Axis.vertical,
+            children: [
+              Home(),
+              Services(),
+              Projects(),
+              Contact(),
+            ],
+          ),
+        ],
       ),
     );
   }

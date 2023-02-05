@@ -1,4 +1,4 @@
-String hellotag = '''Hi there🖐, Welcome to my journey ''';
+String hellotag = '''Hi there🖐, Let's begin the journey ''';
 String myname = "I'm Aaryan Sharma Neupane,";
 
 String animationtxt1 = " Mobile Application Developer";
@@ -6,16 +6,19 @@ String animationtxt2 = " UI/UX Designer";
 String animationtxt3 = " Web Developer";
 
 // //
-// String contactHeadding = "Let’s try my service now!";
-// String contactSubHeadding =
-//     "Let’s work together and make everything super cute and super useful.";
-// //
+String contactHeadding = "Let’s try my service now!";
+String contactSubHeadding =
+    "Let’s work together and make everything super cute and super useful.";
+//
 String miniDescription =
     "Freelancer providing services for programming and design content needs. Join me down below and let's get started!";
 
-// String servicesSubHeading =
-//     "Since the beginning of my journey as a freelance designer and developer, I've worked in startups and collaborated with talented people to create digital products for both business and consumer use. I offer a wide range of services, including brand design, programming and teaching.";
-// //
+String servicesSubHeading =
+    "Since the beginning of my journey as a freelance designer and developer, I've worked in startups and collaborated with talented people to create digital products for both business and consumer use. I offer a wide range of services, including brand design, programming and teaching.";
+
+String serviceCard =
+    "Are you interested in great mobile app? Let's make it a reality.";
+//
 
 // String protfolioSubHeading =
 //     "Since the beginning of my journey as a designer and developer, I have created digital products for business and consumer use. This is a little bit.";

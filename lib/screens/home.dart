@@ -1,3 +1,4 @@
+import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/main.dart';
 
@@ -101,19 +102,25 @@ class Home extends StatelessWidget {
             ),
           ),
         ),
-        Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(300),
-            border: Border.all(
-              width: 3,
-              color: primaryColor,
+        AvatarGlow(
+          endRadius: 150,
+          glowColor: primaryColor,
+          showTwoGlows: true,
+          curve: Curves.easeOutQuart,
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(300),
+              border: Border.all(
+                width: 3,
+                color: primaryColor,
+              ),
             ),
-          ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(300),
-            child: Image.asset(
-              "assets/images/profile.jpg",
-              height: 230,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(300),
+              child: Image.asset(
+                "assets/images/profile.jpg",
+                height: 230,
+              ),
             ),
           ),
         ),
