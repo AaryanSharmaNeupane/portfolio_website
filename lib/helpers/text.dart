@@ -1,5 +1,5 @@
 String hellotag = '''Hi there🖐, Let's begin the journey ''';
-String myname = "I'm Aaryan Sharma Neupane,";
+String myname = "I'm Monika Gautam,";
 
 String animationtxt1 = " Mobile Application Developer";
 String animationtxt2 = " UI/UX Designer";

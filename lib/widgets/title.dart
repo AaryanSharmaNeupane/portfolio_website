@@ -13,7 +13,7 @@ Widget title(context) {
           ),
           children: [
             TextSpan(
-              text: '𝓇𝓊',
+              text: 'm',
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 color: Theme.of(context).primaryColor,
@@ -21,14 +21,14 @@ Widget title(context) {
               ),
             ),
             const TextSpan(
-              text: '𝓈𝓉𝓊',
+              text: 'on',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 35,
               ),
             ),
             TextSpan(
-              text: "'𝓈",
+              text: "y's",
               style: TextStyle(
                 color: Theme.of(context).primaryColor,
                 fontSize: 35,
