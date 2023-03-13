@@ -68,7 +68,9 @@ flutter:
     - assets/images/bg.jpg
     - assets/images/driving.gif
     - assets/images/android.png
+    - assets/images/ios.png
     - assets/images/kanimo.jpg
+    - assets/images/web.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

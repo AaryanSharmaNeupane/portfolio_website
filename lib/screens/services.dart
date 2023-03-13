@@ -8,27 +8,30 @@ class Services extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(
+        const Text(
           "What I can Do?",
           style: TextStyle(
             color: Colors.white,
             fontSize: 50,
           ),
         ),
-        Container(
-          width: 1300,
-          child: Text(
-            servicesSubHeading,
-            style: TextStyle(
-              color: Colors.white,
+        Padding(
+          padding: const EdgeInsets.fromLTRB(0, 17, 0, 0),
+          child: SizedBox(
+            width: 1300,
+            child: Text(
+              servicesSubHeading,
+              style: const TextStyle(
+                color: Colors.white,
+              ),
             ),
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(350, 0, 71, 0),
+          padding: const EdgeInsets.fromLTRB(350, 71, 71, 0),
           child: Row(
             children: [
-              Container(
+              SizedBox(
                 height: 330,
                 width: 300,
                 // color: Colors.black,
@@ -43,7 +46,7 @@ class Services extends StatelessWidget {
                           "assets/images/android.png",
                           height: 170,
                         ),
-                        Text(
+                        const Text(
                           "Android App Development",
                           style: TextStyle(color: Colors.white),
                         ),
@@ -55,15 +58,15 @@ class Services extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        Text(
+                        const Text(
                           "🛠 Flutter",
                           style: TextStyle(color: Colors.white),
                         ),
-                        Text(
+                        const Text(
                           "🛠 Java",
                           style: TextStyle(color: Colors.white),
                         ),
-                        Text(
+                        const Text(
                           "🛠 Kotlin",
                           style: TextStyle(color: Colors.white),
                         )
@@ -72,10 +75,10 @@ class Services extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
-              Container(
+              SizedBox(
                 height: 330,
                 width: 300,
                 // color: Colors.black,
@@ -87,10 +90,10 @@ class Services extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.asset(
-                          "assets/images/android.png",
+                          "assets/images/ios.png",
                           height: 170,
                         ),
-                        Text(
+                        const Text(
                           "iOS App Development",
                           style: TextStyle(color: Colors.white),
                         ),
@@ -102,11 +105,11 @@ class Services extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        Text(
+                        const Text(
                           "🛠 Flutter",
                           style: TextStyle(color: Colors.white),
                         ),
-                        Text(
+                        const Text(
                           "🛠 Swift",
                           style: TextStyle(color: Colors.white),
                         ),
@@ -115,10 +118,10 @@ class Services extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
-              Container(
+              SizedBox(
                 height: 330,
                 width: 300,
                 // color: Colors.black,
@@ -130,30 +133,30 @@ class Services extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.asset(
-                          "assets/images/android.png",
+                          "assets/images/web.png",
                           height: 170,
                         ),
-                        Text(
+                        const Text(
                           "Web Development",
                           style: TextStyle(color: Colors.white),
                         ),
-                        Text(
-                          serviceCard,
-                          style: const TextStyle(
+                        const Text(
+                          "Are you interested in great website? Let's make it a reality.",
+                          style: TextStyle(
                             color: Colors.white,
                             fontSize: 15,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        Text(
+                        const Text(
                           "🛠 HTML",
                           style: TextStyle(color: Colors.white),
                         ),
-                        Text(
+                        const Text(
                           "🛠 CSS",
                           style: TextStyle(color: Colors.white),
                         ),
-                        Text(
+                        const Text(
                           "🛠 Wordpress",
                           style: TextStyle(color: Colors.white),
                         )

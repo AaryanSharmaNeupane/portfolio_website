@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/screens/projects.dart';
 import 'package:portfolio_website/screens/services.dart';
@@ -62,9 +60,9 @@ class MainPage extends StatelessWidget {
             shrinkWrap: true,
             scrollDirection: Axis.vertical,
             children: [
-              Home(),
-              Services(),
-              Projects(),
+              const Home(),
+              const Services(),
+              const Projects(),
               Contact(),
             ],
           ),

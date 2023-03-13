@@ -8,20 +8,20 @@ class Contact extends StatelessWidget {
     {
       "imgUrl":
           "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-      "links": "https://github.com/AaryanSharmaNeupane"
+      "links": "https://github.com/Monikagm11"
     },
     {
       "imgUrl": "https://cdn-icons-png.flaticon.com/512/145/145807.png",
-      "links": "https://www.linkedin.com/in/aaryan-sharma09"
+      "links": "https://www.linkedin.com/in/monika-gautam-a37a42258/"
     },
     {
       "imgUrl":
           "https://i.pinimg.com/736x/24/37/73/2437730f7e3a5705e205e67fa2cd1020.jpg",
-      "links": "https://www.instagram.com/that_guy_on_internet/"
+      "links": "https://www.instagram.com/monikagautam93/"
     },
     {
       "imgUrl": "https://www.facebook.com/images/fb_icon_325x325.png",
-      "links": "https://www.facebook.com/theinfinity09"
+      "links": "https://www.facebook.com/monika.gautam.313"
     },
   ];
 
@@ -60,17 +60,22 @@ class Contact extends StatelessWidget {
                     children: [
                       Text(
                         contactHeadding,
-                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        style:
+                            const TextStyle(color: Colors.white, fontSize: 20),
                       ),
                       ElevatedButton(
-                        onPressed: () {},
-                        child: Text("Contact me"),
+                        onPressed: () {
+                          launchUrl(
+                            Uri.parse(socials[2]['links']),
+                          );
+                        },
+                        child: const Text("Contact me"),
                       ),
                     ],
                   ),
                   Text(
                     contactSubHeadding,
-                    style: TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -98,9 +103,12 @@ class Contact extends StatelessWidget {
             ),
           ),
         ),
-        Text(
-          "Copyright ",
-          style: TextStyle(color: Colors.white),
+        const Padding(
+          padding: EdgeInsets.all(17.0),
+          child: Text(
+            "Copyright@ 2023 ",
+            style: TextStyle(color: Colors.white),
+          ),
         )
       ],
     );
